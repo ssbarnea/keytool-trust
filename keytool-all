@@ -1,0 +1,15 @@
+#!/bin/bash
+set -ex
+chmod +x keytool-trust
+./keytool-trust 10.9.164.179 443
+./keytool-trust info.citrite.net 443
+./keytool-trust crowd.citrite.net 443
+./keytool-trust tracker.citrix.com 443
+./keytool-trust mail.citrix.com 993
+./keytool-trust mail.citrix.com 995
+./keytool-trust lonpdc01.citrite.net 636
+./keytool-trust lonpdc01.citrite.net 3269
+./keytool-trust cbg1pdc01.citrite.net 636
+./keytool-trust cbg1pdc01.citrite.net 3269
+./keytool-trust cbg2pdc01.citrite.net 636
+./keytool-trust cbg2pdc01.citrite.net 3269
