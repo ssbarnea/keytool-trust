@@ -12,7 +12,11 @@ KEYTOOL="sudo keytool"
 for CACERTS in 	/usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts \
 	/usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts \
 	"/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/security/cacerts" \
-	"/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/MacOS/itms/java/lib/security/cacerts"
+	"/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/MacOS/itms/java/lib/security/cacerts" \
+        "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/cacerts" \
+        "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/security/cacerts" \
+        "/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/security/cacerts"
+
 do
 
 if [ -e "$CACERTS" ]
